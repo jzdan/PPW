@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Pengantar Web MIning &#8212; PPW</title>
+    <title>Pengantar Web Mining &#8212; PPW</title>
   
   
   
@@ -158,8 +158,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="PPW - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="PPW - Home"/>`);</script>
+    <img src="_static/fotogue.jpeg" class="logo__image only-light" alt="PPW - Home"/>
+    <script>document.write(`<img src="_static/fotogue.jpeg" class="logo__image only-dark" alt="PPW - Home"/>`);</script>
   
   
 </a></div>
@@ -174,10 +174,17 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pengantar Web MIning</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pengantar Web Mining</a></li>
+
+
+
+
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="Crawling.html">Crawling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CrawlingPTABERITA.html">Crawling PTA &amp; Berita</a></li>
-<li class="toctree-l1"><a class="reference internal" href="PTABERITA.html">Crawling PTA &amp; Berita</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Preprocessing.html">PREPROCESSING</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TF-IDF%20%26%20WORD%20EMBEDING.html">TF-IDF &amp; Word Embeding</a></li>
 
@@ -356,7 +363,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -367,11 +376,28 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Pengantar Web MIning</h1>
+    <h1>Pengantar Web Mining</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Pengantar Web Mining</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#web-crawling">Web Crawling</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#web-data-preprocessing">Web Data Preprocessing</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pembelajaran-terawasi-supervised-learning">Pembelajaran Terawasi (Supervised Learning)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pembelajaran-tak-terawasi-unsupervised-learning">Pembelajaran Tak Terawasi (Unsupervised Learning)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#web-content-mining-text-mining">Web Content Mining (Text Mining)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#web-usage-mining">Web Usage Mining</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#web-structure-mining-graph-mining">Web Structure Mining (Graph Mining)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-system">Deployment System</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -382,8 +408,40 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="pengantar-web-mining">
-<h1>Pengantar Web MIning<a class="headerlink" href="#pengantar-web-mining" title="Permalink to this heading">#</a></h1>
-<p>wahyuuuuuu</p>
+<h1>Pengantar Web Mining<a class="headerlink" href="#pengantar-web-mining" title="Permalink to this heading">#</a></h1>
+<p>Web mining merupakan pendekatan ilmiah untuk menggali, menganalisis, serta menemukan pola tersembunyi dari data yang terdapat di World Wide Web. Fenomena pertumbuhan data web yang sangat masif, heterogen, dan dinamis mendorong kebutuhan akan metode analisis yang lebih canggih dibandingkan teknik data mining konvensional. Dengan kata lain, web mining adalah penerapan teori data mining dan machine learning pada data web yang jumlahnya besar, beragam format, dan sering kali tidak terstruktur. Dalam penelitian akademik maupun dunia industri, web mining terbukti berperan penting dalam mendukung pengambilan keputusan, personalisasi layanan, serta peningkatan kualitas pengalaman pengguna.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="web-crawling">
+<h1>Web Crawling<a class="headerlink" href="#web-crawling" title="Permalink to this heading">#</a></h1>
+<p>Web crawling adalah tahap awal dalam proses web mining yang berfungsi untuk mengumpulkan data dari halaman-halaman web secara otomatis. Proses ini dilakukan menggunakan perangkat lunak khusus yang disebut crawler atau bot. Dalam konteks teori informasi, crawler bekerja dengan prinsip traversal graf, di mana setiap halaman web dianggap sebagai simpul (node) dan hyperlink sebagai sisi (edge). Mesin pencari seperti Google, Bing, maupun Yahoo menggunakan metode crawling ini untuk membangun indeks konten internet secara sistematis dan terkini.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="web-data-preprocessing">
+<h1>Web Data Preprocessing<a class="headerlink" href="#web-data-preprocessing" title="Permalink to this heading">#</a></h1>
+<p>Data hasil crawling umumnya bersifat mentah, tidak lengkap, dan sering kali berisi elemen yang tidak relevan, seperti tag HTML, iklan, maupun duplikasi konten. Oleh karena itu, dilakukan preprocessing sebagai tahap pembersihan dan normalisasi. Tahap ini mencakup penghapusan noise, penanganan data hilang, transformasi format, tokenisasi teks, stemming atau lemmatisasi, hingga reduksi dimensi. Landasan teoretis preprocessing merujuk pada konsep data quality improvement, di mana semakin bersih dan terstruktur data, semakin baik pula akurasi model analisis yang dibangun</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="pembelajaran-terawasi-supervised-learning">
+<h1>Pembelajaran Terawasi (Supervised Learning)<a class="headerlink" href="#pembelajaran-terawasi-supervised-learning" title="Permalink to this heading">#</a></h1>
+<p>Supervised learning merupakan metode machine learning di mana sistem dilatih menggunakan dataset yang sudah memiliki label atau target output. Secara teoretis, metode ini berakar pada konsep function approximation, di mana algoritma belajar memetakan input ke output berdasarkan data historis. Contoh penerapan meliputi klasifikasi dokumen web (spam vs non-spam) serta regresi (prediksi harga produk online). Model populer dalam supervised learning termasuk Decision Tree, Support Vector Machine (SVM), dan Neural Network.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="pembelajaran-tak-terawasi-unsupervised-learning">
+<h1>Pembelajaran Tak Terawasi (Unsupervised Learning)<a class="headerlink" href="#pembelajaran-tak-terawasi-unsupervised-learning" title="Permalink to this heading">#</a></h1>
+<p>Berbeda dengan supervised learning, unsupervised learning bekerja pada data yang tidak memiliki label. Tujuannya adalah menemukan pola tersembunyi, pengelompokan, atau struktur laten dalam dataset. Landasan teorinya terletak pada pattern discovery dan probabilistic modeling. Contoh aplikasinya antara lain clustering pengunjung e-commerce berdasarkan perilaku belanja serta analisis asosiasi untuk menemukan keterkaitan antarproduk. Metode yang sering digunakan termasuk K-Means, DBSCAN, dan Apriori Algorithm.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="web-content-mining-text-mining">
+<h1>Web Content Mining (Text Mining)<a class="headerlink" href="#web-content-mining-text-mining" title="Permalink to this heading">#</a></h1>
+<p>Web content mining berfokus pada ekstraksi informasi dari konten halaman web, baik berupa teks, gambar, audio, maupun video. Karena mayoritas konten web berbentuk teks, pendekatan text mining menjadi dominan. Secara teoretis, content mining mengacu pada information retrieval dan natural language processing (NLP). Penerapannya luas, misalnya dalam analisis sentimen ulasan produk, ekstraksi kata kunci untuk SEO, serta identifikasi topik populer di media sosial.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="web-usage-mining">
+<h1>Web Usage Mining<a class="headerlink" href="#web-usage-mining" title="Permalink to this heading">#</a></h1>
+<p>Web usage mining adalah proses menganalisis data perilaku pengguna ketika berinteraksi dengan sebuah website. Data yang digunakan biasanya berasal dari log server, jejak klik (clickstream), maupun catatan transaksi. Teori dasar yang melandasinya adalah user behavior analytics, yang berupaya memahami interaksi manusia dengan sistem digital. Implementasi praktisnya mencakup personalisasi konten, deteksi anomali dalam transaksi online, hingga optimasi desain antarmuka pengguna (UI/UX).</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="web-structure-mining-graph-mining">
+<h1>Web Structure Mining (Graph Mining)<a class="headerlink" href="#web-structure-mining-graph-mining" title="Permalink to this heading">#</a></h1>
+<p>Web structure mining menitikberatkan pada analisis hubungan antarhalaman web melalui struktur hyperlink. Dalam kerangka teori graf, web dipandang sebagai jaringan besar yang terdiri dari simpul (halaman web) dan sisi (tautan). Algoritma klasik seperti PageRank dan HITS merupakan implementasi langsung dari konsep ini, di mana tujuan utamanya adalah mengukur tingkat kepentingan suatu halaman. Analisis struktur ini juga relevan untuk menemukan komunitas online, deteksi hub informasi, serta studi tentang dinamika jaringan sosial.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="deployment-system">
+<h1>Deployment System<a class="headerlink" href="#deployment-system" title="Permalink to this heading">#</a></h1>
+<p>Deployment merupakan tahap akhir dari siklus web mining, di mana model yang telah dikembangkan diintegrasikan ke dalam sistem nyata. Teorinya terkait dengan system implementation dan model lifecycle management. Proses ini tidak hanya mencakup integrasi, tetapi juga monitoring kinerja serta pemeliharaan agar model tetap relevan seiring perubahan data web yang cepat. Contoh nyata deployment meliputi sistem rekomendasi produk di e-commerce, mesin pencari internal di portal berita, dan sistem deteksi hoaks di media sosial.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -440,6 +498,30 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Pengantar Web Mining</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#web-crawling">Web Crawling</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#web-data-preprocessing">Web Data Preprocessing</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pembelajaran-terawasi-supervised-learning">Pembelajaran Terawasi (Supervised Learning)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pembelajaran-tak-terawasi-unsupervised-learning">Pembelajaran Tak Terawasi (Unsupervised Learning)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#web-content-mining-text-mining">Web Content Mining (Text Mining)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#web-usage-mining">Web Usage Mining</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#web-structure-mining-graph-mining">Web Structure Mining (Graph Mining)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-system">Deployment System</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>

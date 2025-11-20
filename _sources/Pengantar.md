@@ -1,2 +1,26 @@
-# Pengantar Web MIning
-wahyuuuuuu
+# Pengantar Web Mining
+Web mining merupakan pendekatan ilmiah untuk menggali, menganalisis, serta menemukan pola tersembunyi dari data yang terdapat di World Wide Web. Fenomena pertumbuhan data web yang sangat masif, heterogen, dan dinamis mendorong kebutuhan akan metode analisis yang lebih canggih dibandingkan teknik data mining konvensional. Dengan kata lain, web mining adalah penerapan teori data mining dan machine learning pada data web yang jumlahnya besar, beragam format, dan sering kali tidak terstruktur. Dalam penelitian akademik maupun dunia industri, web mining terbukti berperan penting dalam mendukung pengambilan keputusan, personalisasi layanan, serta peningkatan kualitas pengalaman pengguna.
+
+# Web Crawling
+Web crawling adalah tahap awal dalam proses web mining yang berfungsi untuk mengumpulkan data dari halaman-halaman web secara otomatis. Proses ini dilakukan menggunakan perangkat lunak khusus yang disebut crawler atau bot. Dalam konteks teori informasi, crawler bekerja dengan prinsip traversal graf, di mana setiap halaman web dianggap sebagai simpul (node) dan hyperlink sebagai sisi (edge). Mesin pencari seperti Google, Bing, maupun Yahoo menggunakan metode crawling ini untuk membangun indeks konten internet secara sistematis dan terkini.
+
+# Web Data Preprocessing
+Data hasil crawling umumnya bersifat mentah, tidak lengkap, dan sering kali berisi elemen yang tidak relevan, seperti tag HTML, iklan, maupun duplikasi konten. Oleh karena itu, dilakukan preprocessing sebagai tahap pembersihan dan normalisasi. Tahap ini mencakup penghapusan noise, penanganan data hilang, transformasi format, tokenisasi teks, stemming atau lemmatisasi, hingga reduksi dimensi. Landasan teoretis preprocessing merujuk pada konsep data quality improvement, di mana semakin bersih dan terstruktur data, semakin baik pula akurasi model analisis yang dibangun
+
+# Pembelajaran Terawasi (Supervised Learning)
+Supervised learning merupakan metode machine learning di mana sistem dilatih menggunakan dataset yang sudah memiliki label atau target output. Secara teoretis, metode ini berakar pada konsep function approximation, di mana algoritma belajar memetakan input ke output berdasarkan data historis. Contoh penerapan meliputi klasifikasi dokumen web (spam vs non-spam) serta regresi (prediksi harga produk online). Model populer dalam supervised learning termasuk Decision Tree, Support Vector Machine (SVM), dan Neural Network.
+
+# Pembelajaran Tak Terawasi (Unsupervised Learning)
+Berbeda dengan supervised learning, unsupervised learning bekerja pada data yang tidak memiliki label. Tujuannya adalah menemukan pola tersembunyi, pengelompokan, atau struktur laten dalam dataset. Landasan teorinya terletak pada pattern discovery dan probabilistic modeling. Contoh aplikasinya antara lain clustering pengunjung e-commerce berdasarkan perilaku belanja serta analisis asosiasi untuk menemukan keterkaitan antarproduk. Metode yang sering digunakan termasuk K-Means, DBSCAN, dan Apriori Algorithm.
+
+# Web Content Mining (Text Mining)
+Web content mining berfokus pada ekstraksi informasi dari konten halaman web, baik berupa teks, gambar, audio, maupun video. Karena mayoritas konten web berbentuk teks, pendekatan text mining menjadi dominan. Secara teoretis, content mining mengacu pada information retrieval dan natural language processing (NLP). Penerapannya luas, misalnya dalam analisis sentimen ulasan produk, ekstraksi kata kunci untuk SEO, serta identifikasi topik populer di media sosial.
+
+# Web Usage Mining
+Web usage mining adalah proses menganalisis data perilaku pengguna ketika berinteraksi dengan sebuah website. Data yang digunakan biasanya berasal dari log server, jejak klik (clickstream), maupun catatan transaksi. Teori dasar yang melandasinya adalah user behavior analytics, yang berupaya memahami interaksi manusia dengan sistem digital. Implementasi praktisnya mencakup personalisasi konten, deteksi anomali dalam transaksi online, hingga optimasi desain antarmuka pengguna (UI/UX).
+
+# Web Structure Mining (Graph Mining)
+Web structure mining menitikberatkan pada analisis hubungan antarhalaman web melalui struktur hyperlink. Dalam kerangka teori graf, web dipandang sebagai jaringan besar yang terdiri dari simpul (halaman web) dan sisi (tautan). Algoritma klasik seperti PageRank dan HITS merupakan implementasi langsung dari konsep ini, di mana tujuan utamanya adalah mengukur tingkat kepentingan suatu halaman. Analisis struktur ini juga relevan untuk menemukan komunitas online, deteksi hub informasi, serta studi tentang dinamika jaringan sosial.
+
+# Deployment System
+Deployment merupakan tahap akhir dari siklus web mining, di mana model yang telah dikembangkan diintegrasikan ke dalam sistem nyata. Teorinya terkait dengan system implementation dan model lifecycle management. Proses ini tidak hanya mencakup integrasi, tetapi juga monitoring kinerja serta pemeliharaan agar model tetap relevan seiring perubahan data web yang cepat. Contoh nyata deployment meliputi sistem rekomendasi produk di e-commerce, mesin pencari internal di portal berita, dan sistem deteksi hoaks di media sosial.
